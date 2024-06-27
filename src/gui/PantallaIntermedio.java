@@ -93,7 +93,7 @@ public class PantallaIntermedio extends JFrame{
 
         SOLUCIONButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                logicaIntermedio.solucion(incompleto, tablaIntermedio, completo);
+                new MostrarSolucion(completo);
             }
         });
 

@@ -89,7 +89,7 @@ public class PantallaDificil extends  JFrame{
 
         SOLUCIONButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                logicaDificil.solucion(incompleto, tablaDificil, completo);
+                new MostrarSolucion(completo);
             }
         });
 

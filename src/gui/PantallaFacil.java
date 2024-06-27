@@ -92,16 +92,18 @@ public class PantallaFacil extends JFrame {
 
         SOLUCIONButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                logicaFacil.solucion(incompleto, tablaFacil, completo);
+                new MostrarSolucion(completo);
             }
         });
 
         buttonPanel.add(SALIRButton);
+
         SALIRButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 setVisible(false);
             }
         });
+
         pack();
         setLocationRelativeTo(null);
         setVisible(true);

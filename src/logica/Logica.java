@@ -7,10 +7,10 @@ import javax.swing.*;
 import javax.swing.table.AbstractTableModel;
 
 public class Logica {
-    public boolean checkSolucion(JTable tablaFacil, int[][] solucion) {
+    public boolean checkSolucion(JTable tabla, int[][] solucion) {
         for (int row = 0; row < 9; row++) {
             for (int col = 0; col < 9; col++) {
-                Object value = tablaFacil.getValueAt(row, col);
+                Object value = tabla.getValueAt(row, col);
                 if (value == null || !value.toString().matches("\\d")) {
                     return false;
                 }
